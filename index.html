@@ -14,91 +14,115 @@
     </head>
     <body>
 
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-xl-3 pt-5">
-                    <img height="300" width="300" class="" src="assets/logo-text-transparent.png">
-                    <div id="sidebar" class="pt-5">
-                        <p class="nav-link"><a href="#">Home</a></p>
-                        <p class="nav-link"><a href="#">About Me</a></p>
-                        <p class="nav-link"><a href="#">Portfolio</a></p>
-                        <p class="nav-link"><a href="#">CV</a></p>
-                        <p class="nav-link"><a href="#">Contact</a></p>
-                    </div>
-                </div>
-                <div class="col-xl-9 pt-5">
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="image-container">
-                                <img class="hover-img img-fluid" src="assets/portfolio-2020-card.jpg">
-                                <div class="text-overlay">
-                                    <div class="text">Portfolio 2020</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="image-container">
-                                <img class="hover-img img-fluid" src="assets/carcat-card.jpg">
-                                <div class="text-overlay">
-                                    <div class="text">CarCat.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="image-container">
-                                <img class="hover-img img-fluid" src="assets/spacerace.png">
-                                <div class="text-overlay">
-                                    <div class="text">SpaceRace</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row pt-4">
-                        <div class="col-lg-4">
-                            <div class="image-container">
-                                <img class="hover-img img-fluid" src="assets/av1874-card.jpg">
-                                <div class="text-overlay">
-                                    <div class="text">AV1874</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="image-container">
-                                <img class="hover-img img-fliuid" src="assets/buzzart-studios-2017.png">
-                                <div class="text-overlay">
-                                    <div class="text">Buzzart Studios 2017</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="image-container">
-                                <img class="hover-img img-fluid" src="assets/buzzart-studios-2016.png">
-                                <div class="text-overlay">
-                                    <div class="text">Buzzart Studios 2016</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="footer mt-5">
-                    ©Josh Birch 2020. All Rights Reserved.
-                </div>
+        <!--Sidenav - Mobile & Tablet Only-->
+        <div id="mySidenav" class="sidenav">
+            <div class="wrapper-sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times fa-sm"></i></a>
+                <a href="index.html">Home</a>
+                <a href="about-me.html">About Me</a>
+                <a href="about-me.html#cv-banner">CV</a>
+                <a href="#">Contact</a>
             </div>
         </div>
 
 
-        <!-- <div class="row">
-            <div class="footer mt-5">
-                ©Josh Birch 2020. All Rights Reserved.
+        <div class="d-sm-block d-md-block d-lg-block d-xl-none" id="mobile-hamburger">
+            <span onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
+        </div>
+
+
+        <!--Vertically Align Content-->
+        <div class="vertical-center">
+            <div class="container-fluid h-100">
+                <div class="wrapper">
+                    <div class="row h-100">
+                        <div id="mobile-center-logo" class="col-xl-3">
+                            <div class="mx-auto">
+                                <img height="200" width="200" class="logo ml-4" src="assets/logo-text-transparent.png">
+                            </div>
+                            <div id="sidebar" class="pt-4 d-none d-xl-block">
+                                <p class="nav-link"><a href="index.html">Home</a></p>
+                                <p class="nav-link"><a href="about-me.html">About Me</a></p>
+                                <p class="nav-link"><a href="about-me.html#cv-banner">CV</a></p>
+                                <p class="nav-link"><a href="#">Blog</a></p>
+                                <p class="nav-link"><a href="#">Contact</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-9">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="image-container">
+                                        <img class="hover-img img-fluid" src="assets/portfolio-2020-card.jpg">
+                                        <div class="text-overlay">
+                                            <div class="text">Portfolio 2020</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="image-container">
+                                        <img class="hover-img img-fluid" src="assets/carcat-card.jpg">
+                                        <div class="text-overlay">
+                                            <div class="text">CarCat.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="image-container">
+                                        <img class="hover-img img-fluid" src="assets/spacerace.png">
+                                        <div class="text-overlay">
+                                            <div class="text">SpaceRace</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pt-2">
+                                <div class="col-lg-4">
+                                    <div class="image-container">
+                                        <img class="hover-img img-fluid" src="assets/av1874-card.jpg">
+                                        <div class="text-overlay">
+                                            <div class="text">AV1874</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="image-container">
+                                        <img class="hover-img img-fliuid" src="assets/buzzart-studios-2017.png">
+                                        <div class="text-overlay">
+                                            <div class="text">Buzzart Studios 2017</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="image-container">
+                                        <img class="hover-img img-fluid" src="assets/buzzart-studios-2016.png">
+                                        <div class="text-overlay">
+                                            <div class="text">Buzzart Studios 2016</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+
+
+  
     </body>
 </html>

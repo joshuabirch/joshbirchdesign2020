@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+}
+ /* index */
+.nav-link a {
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 1000;
+    text-decoration: none;
+    color: #fe233d;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 10px;
+    text-align: left;
+    line-height: 2.5;
+    background-size: 100% 200%; 
+    background-image: linear-gradient(to bottom, #fff 50%, #fe233d 50%);
+    transition: 
+    background-position .1s ease-in-out, 
+    color .1s ease-in-out;
+}
+
+.nav-link a:hover {
+    background-position: 0 100%;
+    color: #fff;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    border: 0;
+    transition: border .1s ease;
+}
+  
+.hover-img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+.text-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: #fe233d;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .1s ease;
+}
+
+.image-container:hover {
+    border: solid 10px #fe233d;
+}
+
+.image-container:hover .text-overlay {
+height: 15%;
+}
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: left;
+font-family: titling-gothic-fb, sans-serif;
+font-style: normal;
+font-weight: 1000;
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+white-space: nowrap;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(250, 249, 249);
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 1000; 
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/*About Me*/
+
+.header {
+    padding: 130px;
+    background-color: #fe233d;
+}
+
+.header h1 {
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 1000; 
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #fff;   
+}
+
+.header p {
+    font-family: linotype-vectora, sans-serif;
+    font-style: normal;
+    font-weight: 300; 
+    font-style: italic;
+    color: #fff;
+    font-size: 30px;
+}
+
+.body-text {
+    font-family: linotype-vectora, sans-serif;
+    font-style: normal;
+    font-weight: 300;    
+    line-height: 2;
+    text-align: justify;
+    font-size: 20px;
+}

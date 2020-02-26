@@ -5,19 +5,20 @@ html, body {
 .nav-link a {
     font-family: titling-gothic-fb, sans-serif;
     font-style: normal;
-    font-weight: 1000;
+    font-weight: 900;
     text-decoration: none;
     color: #fe233d;
     text-transform: uppercase;
     font-size: 30px;
     padding: 10px;
     text-align: left;
-    line-height: 2.5;
+    line-height: 2;
     background-size: 100% 200%; 
     background-image: linear-gradient(to bottom, #fff 50%, #fe233d 50%);
     transition: 
     background-position .1s ease-in-out, 
     color .1s ease-in-out;
+    white-space: nowrap;
 }
 
 .nav-link a:hover {
@@ -33,7 +34,7 @@ html, body {
 }
   
 .hover-img {
-display: block;
+/* display: block; */
 width: 100%;
 height: auto;
 }
@@ -70,7 +71,7 @@ transform: translate(-50%, -50%);
 text-align: left;
 font-family: titling-gothic-fb, sans-serif;
 font-style: normal;
-font-weight: 1000;
+font-weight: 900;
 text-decoration: none;
 color: #fff;
 text-transform: uppercase;
@@ -86,19 +87,20 @@ white-space: nowrap;
     font-weight: 1000; 
     text-transform: uppercase;
     font-size: 14px;
+    width: 100%;
 }
 
 /*About Me*/
 
 .header {
-    padding: 130px;
+    padding: 100px;
     background-color: #fe233d;
 }
 
 .header h1 {
     font-family: titling-gothic-fb, sans-serif;
     font-style: normal;
-    font-weight: 1000; 
+    font-weight: 900; 
     text-transform: uppercase;
     font-size: 80px;
     color: #fff;   
@@ -121,3 +123,71 @@ white-space: nowrap;
     text-align: justify;
     font-size: 20px;
 }
+
+.heading {
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 900; 
+    text-transform: uppercase;
+    color: #fe233d;
+    font-size: 56px;
+    text-align: center;
+}
+
+#cv-banner {
+    width: 100%;
+    padding: 60px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#cv-banner p {
+    font-family: linotype-vectora, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.btn-cv, .btn-upwork {
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fe233d;
+    border: solid 5px #fe233d;
+    border-radius: 0;
+    background-size: 100% 200%; 
+    background-image: linear-gradient(to bottom, #fff 50%, #fe233d 50%);
+    transition: 
+    background-position .1s ease-in-out, 
+    color .1s ease-in-out;
+}
+
+.btn-cv:hover, .btn-upwork:hover {
+    background-position: 0 100%;
+    color: #fff;
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* // Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width */

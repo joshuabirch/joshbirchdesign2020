@@ -2,6 +2,26 @@ html, body {
     height: 100%;
 }
 
+.jbd-font {
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.jbd-red {
+    background-color: #fe233d;
+}
+
+.jbd-dark {
+    background-color: #222;
+}
+
+td {
+    font-family: linotype-vectora, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
 
  /* index */
 
@@ -23,14 +43,15 @@ html, body {
 }
 
 .wrapper-sidenav {
-    padding: 150px;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
   
 .sidenav a {
     padding: 8px 8px 8px 8px;
     text-decoration: none;
-    font-size: 84px;
+    font-size: 86px;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -80,6 +101,10 @@ margin-left: 25px;
     padding: 10px;
 }
 
+#mobile-hamburger {
+    cursor: pointer;
+}
+
 .vertical-center {
     min-height: 100%;
     min-height: 100vh;
@@ -101,7 +126,7 @@ margin-left: 25px;
     text-decoration: none;
     color: #fe233d;
     text-transform: uppercase;
-    font-size: 28px;
+    font-size: 36px;
     padding: 10px;
     text-align: left;
     line-height: 2;
@@ -111,6 +136,7 @@ margin-left: 25px;
     background-position .1s ease-in-out, 
     color .1s ease-in-out;
     white-space: nowrap;
+    width: 100%;
 }
 
 .nav-link a:hover {
@@ -188,6 +214,7 @@ white-space: nowrap;
     padding: 100px;
     background-image: url(../assets/logo-repeat-transparent.png);
     background-color: #fe233d;
+    width: 100%;
 }
 
 .header h1 {
@@ -227,6 +254,20 @@ white-space: nowrap;
     text-align: center;
 }
 
+.sub-header {
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 900; 
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: #222;
+    text-align: center;
+}
+
+.sub-header:after {
+    border: solid 10px #fe233d;
+}
+
 #cv-banner {
     width: 100%;
     padding: 60px;
@@ -263,6 +304,35 @@ white-space: nowrap;
     background-position: 0 100%;
     color: #fff;
 }
+
+/*Portfolio 2020 */
+.border-jbd-red {
+    border: solid 5px #fe233d;
+}
+
+
+/* Carcat */
+.image-caption {
+    width: 100%;
+    background-color: #fe233d;
+    font-family: titling-gothic-fb, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+/* AV1874 */
+
+
+
+
+
+
+
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
